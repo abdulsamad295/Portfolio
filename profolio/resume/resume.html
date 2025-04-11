@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="icon" type="image/x-icon" href="image/samad-Photoroom.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      animation: fadeIn 1s ease-in-out;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #070043;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+
+
+    .resume-img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 10px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+    }
+
+    .resume-img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      filter: brightness(1.05) contrast(1.1);
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: linear-gradient(to bottom right, #2d1052 , #d024d6);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #9370DB;
+      transform: scale(1.05);
+    }
+
+    
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .download-btn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RESUME</h1>
+    <img class="resume-img" src="image/abdul samad.jpg" alt="Resume" />
+    <br />
+    <a class="download-btn" href="image/abdul samad.jpg" download="Abdul_Samad_Resume.jpg">Download Resume</a>
+  </div>
+</body>
+</html>
